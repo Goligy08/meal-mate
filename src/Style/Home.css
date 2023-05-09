@@ -1,0 +1,166 @@
+.home-page {
+  width: 100vw;
+  height: 80%;
+  position: absolute;
+  top: 26%;
+  left: 0;
+}
+
+.popular {
+  width: 100vw;
+  height: 30%;
+  position: absolute;
+}
+.popular h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.8rem;
+  margin: 0 0 0 10%;
+  color: #2A374A;
+}
+.popular p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  margin: 1% 0 0 10%;
+  color: #2A374A;
+  opacity: 0.6;
+}
+.popular .card-container {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.popular .card-container .card {
+  order: 1;
+  width: 20rem;
+  height: 25rem;
+  background-color: #F4F6FA;
+  border-radius: 0.5rem;
+  margin: 5% 6% 0 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  position: relative;
+}
+.popular .card-container .card img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.popular .card-container .card p {
+  background: rgba(42, 55, 74, 0.35);
+  border-radius: 0.2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.8px);
+  -webkit-backdrop-filter: blur(15.8px);
+  padding: 2% 2%;
+  z-index: 5;
+  color: white;
+  font-weight: 800;
+  opacity: 1;
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+.popular .card-container .card:hover {
+  opacity: 0.3;
+}
+
+.vegetarian {
+  width: 100vw;
+  height: 30%;
+  position: absolute;
+  top: 60%;
+}
+.vegetarian h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.8rem;
+  margin: 0 0 0 10%;
+  color: #2A374A;
+}
+.vegetarian p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  margin: 1% 0 0 10%;
+  color: #2A374A;
+  opacity: 0.6;
+}
+.vegetarian .card-container {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.vegetarian .card-container .card {
+  order: 1;
+  width: 20rem;
+  height: 25rem;
+  background-color: #F4F6FA;
+  border-radius: 0.5rem;
+  margin: 5% 5% 0 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+  position: relative;
+}
+.vegetarian .card-container .card img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.vegetarian .card-container .card p {
+  background: rgba(42, 55, 74, 0.35);
+  border-radius: 0.2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.8px);
+  -webkit-backdrop-filter: blur(15.8px);
+  padding: 2% 2%;
+  z-index: 5;
+  color: white;
+  font-weight: 800;
+  opacity: 1;
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+.vegetarian .card-container .card:hover {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 600px) {
+  .vegetarian {
+    top: 100%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .home-page {
+    top: 35%;
+  }
+  .home-page .popular .card {
+    width: 15rem;
+    height: 20rem;
+    margin: 5% 6% 5% 6%;
+  }
+  .home-page .vegetarian .card {
+    width: 15rem;
+    height: 20rem;
+    margin: 5% 6% 5% 6%;
+  }
+}/*# sourceMappingURL=Home.css.map */

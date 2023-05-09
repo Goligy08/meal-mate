@@ -1,0 +1,59 @@
+.filters {
+  width: 100vw;
+  height: 12vh;
+  position: absolute;
+  top: 19%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.filters .filter-item {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background-color: #F4F6FA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.filters .filter-item .filter-img {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  order: 1;
+}
+.filters .filter-item .filter-title {
+  order: 2;
+  font-family: "Work Sans", sans-serif;
+  color: #2A374A;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .filters {
+    height: 20vh;
+    flex-direction: column;
+    top: 22%;
+  }
+  .filters .filter-item {
+    width: 15rem;
+    height: 4.5rem;
+    margin: 5% 0 0 0;
+  }
+}
+@media screen and (max-width: 820px) and (min-width: 610px) {
+  .filters {
+    top: 27%;
+  }
+  .filters .filter-item {
+    width: 12rem;
+    height: 6rem;
+  }
+}/*# sourceMappingURL=Filters.css.map */
