@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.efa223c8.css",
+    "main.js": "/static/js/main.edeafbfb.js",
+    "static/js/787.56f99685.chunk.js": "/static/js/787.56f99685.chunk.js",
+    "static/media/HeroPanImg.png": "/static/media/HeroPanImg.d58172be679a310a5006.png",
+    "index.html": "/index.html",
+    "main.efa223c8.css.map": "/static/css/main.efa223c8.css.map",
+    "main.edeafbfb.js.map": "/static/js/main.edeafbfb.js.map",
+    "787.56f99685.chunk.js.map": "/static/js/787.56f99685.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efa223c8.css",
+    "static/js/main.edeafbfb.js"
+  ]
+}
