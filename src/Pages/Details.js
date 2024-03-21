@@ -32,18 +32,17 @@ const Details = () => {
          <p>Cooking Time: {details.readyInMinutes + " Mins"}</p>
          
          <h5>Ingredients</h5>
-{/*           
-          <ul>
-            {details.extendedIngredients.map((ingredient) =>  (
-                <li key={ingredient.id}>{ingredient.original}</li>
-            ))}
-          </ul> */}
 
-          <ul>
-            <li>one</li>
-            <li>one</li>
-            <li>two</li>
-          </ul>
+         <ul>
+          {details.extendedIngredients.map( (ingredient) => (
+            <li key={ingredient.id}>{ingredient.original}</li>
+          ))}
+         </ul>
+      
+
+          
+         
+        
 
          </div>
         

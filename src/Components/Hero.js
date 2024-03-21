@@ -18,7 +18,8 @@ const Hero = () => {
     return( 
         <div className="hero">
             <Link to={"/"}>
-         <h2 className="hero-title"> /0\ Meal Mate</h2>
+         <img className="hero-icon" src={require("../Assets/Icon.png")}></img>
+         <h2 className="hero-title">Meal Mate</h2>
          </Link>
          <form className="form" onSubmit={submitHandler}>
             <input 
@@ -36,6 +37,8 @@ const Hero = () => {
          <h1>The Easiest Way to find new recipes!</h1>
          <h3>Explore the culinary world at your fingertips</h3>
          <button className="find-btn">Find Recipes</button>
+         <img className="hero-img" src={require("../Assets/HeroPanImg.png")}></img> 
+         {/* // Attribution: hero-img design by All-free-download.com use under Creative commons attribution license*/}
 
         </div>
     )
