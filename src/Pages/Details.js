@@ -15,11 +15,17 @@ const Details = () => {
     const detailData = await data.json();
     setDetails(detailData);
 
+   
+
 };
+
 
   useEffect(() => {
     getDetails();
   },[params.name])
+
+  // const ingredients = details.extendedIngredients
+  // console.log(ingredients)
 
 
     return(
@@ -31,14 +37,25 @@ const Details = () => {
          <p>Preparation Time: {details.preparationMinutes + " Mins"}</p>
          <p>Cooking Time: {details.readyInMinutes + " Mins"}</p>
          
-         <h5>Ingredients</h5>
+         {/* <h5>Ingredients</h5>
 
          <ul>
-          {details.extendedIngredients.map( (ingredient) => (
-            <li key={ingredient.id}>{ingredient.original}</li>
-          ))}
-         </ul>
-      
+          {ingredients.map(item => {
+            return <li key={item.id}>{item.nameClean}</li>
+          })}
+         </ul> */}
+
+         <h5>Credit</h5>
+         <p>{details.creditsText}</p>
+         <h5>Weight Watchers Points</h5>
+         <p>{details.weightWatcherSmartPoints}</p>
+         
+        
+         
+    
+
+
+     
 
           
          
@@ -51,6 +68,7 @@ const Details = () => {
          <h4 dangerouslySetInnerHTML={{__html: details.summary}} className="details-summary" ></h4>
          <h5>Instructions</h5>
          <h4 dangerouslySetInnerHTML={{__html: details.instructions}} className="details-instructions" ></h4>
+         
          </div>
        
         </div>
