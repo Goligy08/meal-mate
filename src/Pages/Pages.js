@@ -11,7 +11,7 @@ const Pages = () => {
     return (
      
         <Routes>
-            <Route  path="/" element= {<Home />}  />ßß
+            <Route  path="/meal-mate" element= {<Home />}  />ßß
             <Route path="/filtered/:type" element = {<Filtered />} />
             <Route path="/searched/:search"   element = {<Searched />} />
             <Route path="/details/:name" element = {<Details />} />
