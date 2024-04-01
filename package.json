@@ -1,6 +1,6 @@
 {
   "name": "meal-mate",
-  "hompage":"https://goligy08.github.io/meal-mate/" ,
+  "homepage":"https://goligy08.github.io/meal-mate/" ,
   "version": "0.1.0",
   "private": true,
   "dependencies": {
