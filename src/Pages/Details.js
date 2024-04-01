@@ -34,7 +34,7 @@ const Details = () => {
          <div className="details-stats">
          <h3>{details.title}</h3>
          <img src={details.image} className="details-image"></img>
-         <p>Preparation Time: {details.preparationMinutes + " Mins"}</p>
+         <p>Total Servings: {details.servings}</p>
          <p>Cooking Time: {details.readyInMinutes + " Mins"}</p>
          
          {/* <h5>Ingredients</h5>
@@ -44,11 +44,11 @@ const Details = () => {
             return <li key={item.id}>{item.nameClean}</li>
           })}
          </ul> */}
-
+        <h5>Weight Watchers Points</h5>
+         <p>{details.weightWatcherSmartPoints}</p>
          <h5>Credit</h5>
          <p>{details.creditsText}</p>
-         <h5>Weight Watchers Points</h5>
-         <p>{details.weightWatcherSmartPoints}</p>
+         
          
         
          
@@ -63,8 +63,9 @@ const Details = () => {
 
          </div>
         
-         
          <div className="details-info">
+
+        
          <h4 dangerouslySetInnerHTML={{__html: details.summary}} className="details-summary" ></h4>
          <h5>Instructions</h5>
          <h4 dangerouslySetInnerHTML={{__html: details.instructions}} className="details-instructions" ></h4>
