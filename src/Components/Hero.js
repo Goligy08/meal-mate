@@ -3,9 +3,10 @@ import "../Style/hero.scss";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate, Link } from "react-router-dom";
-
+import {useEffect} from "react";
 const Hero = () => {
 
+  
     const [input, setInput] = useState("");
     const navigate = useNavigate();
  
@@ -36,7 +37,11 @@ const Hero = () => {
 
          <h1>The Easiest Way to find new recipes!</h1>
          <h3>Explore the culinary world at your fingertips</h3>
-         <button className="find-btn">Find Recipes</button>
+         <button className="find-btn" 
+         onClick={() => window.scrollTo({ top: 900, behavior:"smooth" })}
+         >
+            
+            Find Recipes</button>
          <img className="hero-img" src={require("../Assets/HeroPanImg.png")}></img> 
          {/* // Attribution: hero-img design by All-free-download.com use under Creative commons attribution license*/}
 
